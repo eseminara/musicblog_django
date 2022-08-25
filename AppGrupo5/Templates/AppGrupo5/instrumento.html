@@ -1,0 +1,39 @@
+{% extends "AppGrupo5/padre.html" %}
+
+{% load static %}
+
+{% block contenidoVariable %}
+    <h1><p style="Color:rgb(255, 136, 0)">Esta es la plantilla de instrumento, hereda desde padre.html</p> </h1>
+    
+    
+   <h2>Tambien podes buscar un instrumento:</h2>
+
+    <form action="/AppGrupo5/buscarinstrumento/" method="GET">
+
+        <input type="text" name="tipoinstrumento" id="tipoinstrumento">
+
+        <input type="submit" value="Buscar">
+
+
+
+
+    </form>
+    {% if Instrumentos %}
+
+    
+        
+    <ul>
+	{% for Instrumento in Instrumentos %}
+        <p>Estamos buscando el siguiente tipo de instrumento:{{Instrumento.tipoinstrumento}}</p>
+        <li><p><b>Tipo de instrumento:</b>  {{Instrumento.tipoinstrumento}} </li> </p>
+        <li><p><b>Marca:</b> {{Instrumento.marca}} </li></p>
+		<li><p><b>Modelo:</b> {{Instrumento.modelo}} </li></p>
+        <li><p><b>Color:</b> {{Instrumento.color}} </li></p>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+
+{% endblock %}
