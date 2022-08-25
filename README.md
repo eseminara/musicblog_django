@@ -1,11 +1,16 @@
 # Grupo5Proyecto
 
-Proyecto academico sobre desarrollo web en Python/Django
+Proyecto Blog musical. Web Desarrollada en Python/Django
+Musical Blog project. Web Python & Django developped
 
-Tienda Ecommerce casa de musica musica.
 
-Los elementros se encuentran divididos en secciones segun corresponda.
+  -   Nav Bar
+  -   Form to get and post
+  -   DB Data Consulting
+  -   Search form
+  -   HTML/CSS/Boostrap
 
-Barra de busqueda de navegacion
 
-Formulario de carga de elementos para stock y control en una DB.
+Pip Libraries needed:
+- Django
+- Pillow
